@@ -1,0 +1,146 @@
+.form-container-parent {
+  margin: 0% auto;
+  padding: 20px;
+  margin: 20px;
+  color: #fafafa;
+
+  border-radius: 24px;
+  border: 1px solid #0e464f;
+  background: #041e23;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 40em) {
+  .form-container-parent {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.verify-image img{
+  width: 50px;
+  height: 50px;
+}
+
+.verify-image {
+  width: 20px;
+}
+
+.undeline-one {
+  width: 100%;
+  height: 4px;
+
+  border-radius: 5px;
+  background: #0e464f;
+  margin-top: 12px;
+}
+
+.underline-innerline {
+  max-width: 232px;
+  height: 4px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: #24a0b5;
+}
+
+.div-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-input input {
+  padding: 12px;
+  border-radius: var(--Radius-reg-2, 12px);
+  border: 1px solid #07373f;
+  background-color: #041e23;
+  color: #fafafa;
+
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+.div-input input::placeholder {
+  color: #fafafa;
+}
+
+.form-upload-input {
+  margin-top: 32px;
+  padding: 24px;
+
+  border-radius: 24px;
+  border: 1px solid #07373f;
+  background: #052228;
+}
+
+.form-upload-input-div {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  max-width: 240px;
+  margin: auto;
+  margin-top: 12px;
+
+  border-radius: 32px;
+  border: 4px solid rgba(36, 160, 181, 0.5);
+  background: #0e464f;
+}
+
+.form-upload-input-div:focus {
+  border: 4px solid rgba(28, 186, 214, 0.5);
+}
+
+.form-upload-input-div img {
+  width: 32px;
+  height: 32px;
+  padding-bottom: 12px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+@media (min-width: 40em) {
+  .form-buttons {
+    flex-direction: row;
+  }
+}
+
+.form-buttons button {
+  width: 100%;
+}
+
+.back-btn {
+  border-radius: var(--Radius-reg, 8px);
+  border: 1px solid #24a0b5;
+  padding: 12px;
+  background: #052228;
+  color: #24a0b5;
+  font-size: 16px;
+}
+
+.ticket-btn {
+  border-radius: var(--Radius-reg, 8px);
+  background: #24a0b5;
+  border: 1px solid #24a0b5;
+  padding: 12px;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+.text-area {
+  height: 127px;
+  padding: var(--Radius-reg-2, 12px);
+
+  border-radius: var(--Radius-reg-2, 12px);
+  border: 1px solid #07373f;
+  background-color: #041e23;
+  font-size: 16px;
+  color: #e4dfdf;
+}

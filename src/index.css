@@ -1,38 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(
+      52.52% 32.71% at 50% 97.66%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ),
+    #02191d;
+  font-family: "Roboto", serif;
+}
 
 body {
-  background-image: url("./assets/images/pattern-lines.svg"),
-    url("./assets/images/pattern-squiggly-line-top.svg"),
-    url("./assets/images/pattern-circle.svg"),
-    url("./assets/images/pattern-squiggly-line-bottom.svg"),
-    url("./assets/images/background-mobile.png");
-  background-size: "auto, 60%, auto, 60%, cover";
-  background-position: top, top right, center, bottom left, center;
+  padding: 0;
+  margin: 0;
 }
 
-#ticket {
-  background-image: url("./assets/images/pattern-ticket.svg");
-}
-@media (min-width: 768px) {
-  body {
-    background-image: url("./assets/images/pattern-lines.svg"),
-      url("./assets/images/pattern-squiggly-line-top.svg"),
-      url("./assets/images/pattern-circle.svg"),
-      url("./assets/images/pattern-squiggly-line-bottom.svg"),
-      url("./assets/images/background-tablet.png");
-    background-size: auto, auto, auto, auto, cover;
-    background-color: red;
-  }
-}
-@media (min-width: 1024px) {
-  body {
-    background-image: url("./assets/images/pattern-lines.svg"),
-      url("./assets/images/pattern-squiggly-line-top.svg"),
-      url("./assets/images/pattern-circle.svg"),
-      url("./assets/images/pattern-squiggly-line-bottom.svg"),
-      url("./assets/images/background-desktop.png");
-    background-size: auto, auto, auto, auto, cover;
-  }
+button:hover {
+  cursor: pointer;
 }

@@ -1,26 +1,22 @@
-import { useState } from "react";
-import Form from "./UI/Form";
-import Header from "./UI/Header";
-import Output from "./UI/Output";
+import "./App.css";
+import Form from "./components/Form";
+import Header from "./components/Header";
+import Pricing from "./components/Pricing";
+import Ticket from "./components/Ticket";
 
-export default function App() {
-  const [info, setInfo] = useState({
-    image: null,
-    view: null,
-    name: "Stephen Adewale",
-    github: "@demostephen",
-    email: "codewithme.stephen@gmail.com",
-  });
-  function handleInfo([id, value]) {
-    setInfo({
-      ...prev,
-      id: [value],
-    });
-  }
+import { Routes, Route } from "react-router";
+
+function App() {
   return (
     <>
-      <Header data={info} />
-      {info.view ? <Output data={info} /> : <Form />}
+      <Header />
+      <Routes>
+        <Route path="/" element={<Pricing />} />
+        <Route path="/Form" element={<Form />} />
+        <Route path="/Ticket" element={<Ticket />} />
+      </Routes>
     </>
   );
 }
+
+export default App;

@@ -1,0 +1,242 @@
+.container-parent {
+  margin: 0% auto;
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  border-radius: 32px;
+  border: 1px solid #0e464f;
+
+  background: #08252b;
+  margin-bottom: 48px;
+  color: #fafafa;
+}
+
+@media (min-width: 40em) {
+  .container-parent {
+    max-width: 700px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    margin-top: 46px;
+    margin-bottom: 40px;
+  }
+}
+
+.container-child {
+  padding: 24px;
+}
+
+.Ticket-Selection h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0%;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 40em) {
+  .Ticket-Selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Ticket-Selection h2 {
+    font-size: 32px;
+  }
+}
+
+.undeline-one {
+  width: 100%;
+  height: 4px;
+
+  border-radius: 5px;
+  background: #0e464f;
+  margin-top: 12px;
+}
+
+.underline-innerline {
+  max-width: 232px;
+  height: 4px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: #24a0b5;
+}
+
+.details-container {
+  text-align: center;
+  margin-top: 32px;
+  padding: 16px 24px;
+
+  border-radius: 24px;
+  border-right: 2px solid #07373f;
+  border-bottom: 2px solid #07373f;
+  border-left: 2px solid #07373f;
+  background: radial-gradient(
+      57.42% 106.59% at 14.02% 32.06%,
+      rgba(36, 160, 181, 0.2) 0%,
+      rgba(36, 160, 181, 0) 100%
+    ),
+    rgba(10, 12, 17, 0.1);
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.details-container h2 {
+  font-family: "Road Rage", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  padding-bottom: 80px;
+}
+
+.details-container p {
+  font-size: 14px;
+}
+
+.details-container h2,
+p {
+  margin: 0%;
+  padding: 0%;
+}
+
+.undeline-two {
+  width: 100%;
+  height: 4px;
+
+  border-radius: 5px;
+  background: #0e464f;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.pricing-box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border-radius: 24px;
+  border: 1px solid #07373f;
+  background: #052228;
+  padding: 16px;
+}
+
+@media (min-width: 40em) {
+  .pricing-box-container {
+    flex-direction: row;
+  }
+}
+
+.Ticket-Selection {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
+.selected-p {
+  margin-bottom: 8px;
+}
+
+.price-box {
+  border: 1px solid green;
+  width: 92%;
+  margin: 0 auto;
+  padding: 12px;
+
+  border-radius: 12px;
+  border: 2px solid #197686;
+}
+
+.price-box:hover {
+  border: 2px solid #13d6f8;
+}
+
+.price-box:focus {
+  border: 2px solid #13d6f8;
+}
+
+.price-box h2 {
+  margin: 0%;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.price-box p {
+  font-size: 16px;
+}
+
+.price-box .p2 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.numbers-p {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.ticket-amount-input input {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.number {
+  border-radius: var(--Radius-reg-2, 12px);
+  border: 1px solid #07373f;
+  background-color: #041e23;
+  color: #fafafa;
+  padding: 12px;
+  width: 100%;
+}
+
+.pricing-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .pricing-buttons {
+    flex-direction: row-reverse;
+    margin-top: 32px;
+    gap: 24px;
+  }
+}
+
+.next-btn {
+  border-radius: 8px;
+  background: #24a0b5;
+  padding: 12px;
+  border: 1px solid #24a0b5;
+  font-size: 16px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #fafafa;
+}
+
+@media (min-width: 40em) {
+  .next-btn {
+    margin: 0;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #fafafa;
+  width: 100%;
+}
+
+.cancel-btn {
+  border-radius: 8px;
+  border: 1px solid #24a0b5;
+  color: #24a0b5;
+  background: #052228;
+  padding: 12px;
+  font-size: 16px;
+  height: 0%;
+}
+
+.pricing-buttons button {
+  width: 100%;
+}
